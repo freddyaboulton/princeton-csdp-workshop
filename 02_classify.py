@@ -254,7 +254,7 @@ def main(
     # Load tokenizer for chat template
     logger.info("Loading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(model_id)
-    guided_decoding_params = GuidedDecodingParams(choice=["Positive", "Negative", "Neutral"])
+    guided_decoding_params = GuidedDecodingParams(choice=["Positive", "Negative", "Neutral", "Unknown"])
 
     # Create sampling parameters
     sampling_params = SamplingParams(
