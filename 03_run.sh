@@ -2,6 +2,7 @@ hf jobs uv run \
     --flavor l4x1 \
     --image vllm/vllm-openai \
     --secrets-file secrets.txt \
+    --namespace princeton-hf-workshop \
     https://huggingface.co/datasets/gnovoa26/hfscripts/resolve/main/classify.py \
     --max-model-len 45000 \
     princeton-hf-workshop/affordable-housing-conversations \
